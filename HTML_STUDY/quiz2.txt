@@ -1,0 +1,9 @@
+1. head
+2. /head
+3. body
+4. 커피
+5. value
+6. optgroup		-> select
+7. /optgroup		-> /select
+8. radio		-> "radio"
+9. type="checkbox"

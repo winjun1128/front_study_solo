@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="client_name">고객명:</label>
+    <input type="text" id="client_name">
+    <br>
+    <label>전화번호:
+        <input type="text">
+    </label>
+    <br>
+    <label>E-mail:
+        <input type="email">
+    </label>
+    <br>
+    <label for="option">피자선택:</label>
+    <select id="option">
+        <option>치즈</option>
+        <option>페퍼로니</option>
+        <option>콤비네이션</option>
+        <option disabled selected>피자를 선택하세요</option>
+    </select>
+    <br>
+    <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type="radio" name="size" id="small"><label for="small">Small</label><br>
+        <input type="radio" name="size" id="medium"><label for="medium">Medium</label><br>
+        <input type="radio" name="size" id="large"><label for="large">Large</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" id="bacon" name="choose"><label for="bacon">베이컨</label><br>
+        <input type="checkbox" id="cheese" name="choose"><label for="cheese">치즈</label><br>
+        <input type="checkbox" id="onion" name="choose"><label for="onion">양파</label><br>
+        <input type="checkbox" id="mushroom" name="choose"><label for="mushroom">버섯</label><br>
+    </fieldset>
+    <label for="time">희망배송시간:</label>
+    <input type="time"><br>
+    <label for="request">배송시 요청사항:</label>
+    <textarea id="request"></textarea><br>
+    <button>주문하기</button>
+    </form>
+</body>
+</html>
