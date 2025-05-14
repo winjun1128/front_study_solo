@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*기본설정*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: lightgray;
+        }
+        /*바뀌는 대상에 트랜지션 걸기*/
+        .red{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: red;
+
+             transition-property: all;
+            transition-duration: 2s;
+        }
+        .blue{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: blue;
+
+             transition-property: all;
+            transition-duration: 2s;
+        }
+        .black{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: black;
+
+             transition-property: all;
+            transition-duration: 2s;
+        }
+        .green{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: green;
+            display: inline-block;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        .orange{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: orange;
+            display: inline-block;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        .container:hover .red{
+            width: 500px;
+        }
+        .container:hover .blue{
+            background-color: purple;
+        }
+        .container:hover .black{
+            position: relative;
+            left: 200px;
+        }
+        .green:hover{
+            border: 10px solid red;
+        }
+        .orange:hover{
+             border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="black"></div>
+        <div class="green">
+        </div><div class="orange"></div>
+    </div>
+</body>
+</html>

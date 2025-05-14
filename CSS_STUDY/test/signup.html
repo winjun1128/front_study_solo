@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sign_container{
+            width: 500px;
+            height: 900px;
+            background-color: green;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .sign_form{
+            margin: 0 auto;
+            width: 400px;
+        }
+        .sign_page{
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        .sign_page_signup{
+            width: 50%;
+            height: 100%;
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign_page_signup a{
+            color: white;
+            text-decoration: none;
+        }
+        .sign_page_login{
+             width: 50%;
+            height: 100%;
+            background-color: gray;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign_page_login a{
+            color: white;
+            text-decoration: none;
+        }
+        .sign_title{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .sign_edit{
+            height: 450px;
+        }
+        .sign_edit1{
+            height: 50px;
+            margin-bottom: 100px;
+        }
+        .sign_edit1 input{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+             background-color: green;
+        }
+        .sign_edit2{
+            height: 50px;
+            margin-bottom: 100px;
+        }
+        .sign_edit2 input{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+             background-color: green;
+        }
+        .sign_edit3{
+            height: 50px;
+            margin-bottom: 100px;
+        }
+        .sign_edit3 input{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+             background-color: green;
+        }
+        .sign_button{
+            height: 100px;
+            background-color: aqua;
+        }
+        .sign_button button{
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="signup.html">
+        <div class="sign_container">
+            <div class="sign_form">
+                <div class="sign_page">
+                    <div class="sign_page_signup">
+                        <a href="signup.html">Sign up</a>
+                    </div>
+                    <div class="sign_page_login">
+                        <a href="login.html">Log In</a>
+                    </div>
+                </div>
+                <div class="sign_title">
+                    <h1>Sign Up for free</h1>
+                </div>
+                <div class="sign_edit">
+                    <div class="sign_edit1">
+                        <input type="email" placeholder="Email Address*">
+                    </div>
+                    <div class="sign_edit2">
+                        <input type="password" placeholder="Password*">
+                    </div>
+                     <div class="sign_edit3">
+                        <input type="password" placeholder="Confirm A Password*">
+                    </div>
+                </div>
+                <div class="sign_button">
+                    <button>GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

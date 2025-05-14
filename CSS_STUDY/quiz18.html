@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*정렬 정리*/
+        /*
+            flex(가로:justify-content/세로:align-items): 아이템이 블록요소일때 부모에서 정렬
+            text-align: 아이템이 인라인일때 부모에서 가로정렬
+            vertical-align: 자신이 인라인일때 부모 기준으로 세로정렬
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid blue;
+            width: 700px;
+            height: 500px;
+            color: white;
+        }
+        .A{
+            height: 100px;
+            display: flex;
+            justify-content: space-between; /*양쪽에 붙이기*/
+        }
+        .mainmenu{
+            width: 200px;
+            display: flex;
+            justify-content: center;        /*아이템을 가로*/
+            align-items: center;            /*아이템을 세로*/
+            background-color: red;
+        }
+        .mypage{
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+        }
+        .B{
+            height: 300px;
+            display: flex;
+        }
+        .D{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;                /*넘치면 줄 바꿈*/
+            justify-content: space-around;  /*가로 균등하게*/
+            align-items: center;            /*세로*/
+            background-color: orange;
+        }
+        .box{
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+            background-color: black;
+        }
+        .box:hover{
+            transform: scale(1.4);  /*확대*/
+        }
+        .E{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+        }
+        .C{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:  blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">
+            <div class="mainmenu">메인메뉴</div>
+            <div class="mypage">마이페이지</div>
+        </div>
+        <div class="B">
+            <div class="D">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="E">article</div>
+        </div>
+        <div class="C">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            height: 900px;
+            background-color: green;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form{
+            margin: 0 auto;
+            width: 400px;
+        }
+        .page{
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        .page_signup{
+            width: 50%;
+            height: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page_signup a{
+            color: white;
+            text-decoration: none;
+        }
+        .page_login{
+             width: 50%;
+            height: 100%;
+            background-color: lightgreen;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page_login a{
+            color: white;
+            text-decoration: none;
+        }
+        .title{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .edit{
+            height: 300px;
+        }
+        .edit1{
+            height: 50px;
+            margin-bottom: 100px;
+        }
+        .edit1 input{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+             background-color: green;
+        }
+        .edit2{
+            height: 50px;
+            margin-bottom: 100px;
+        }
+        .edit2 input{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+             background-color: green;
+        }
+        .button{
+            height: 100px;
+            background-color: aqua;
+        }
+        .button button{
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--폼을 제출시켜야만 이메일 입력 검증 가능-->
+    <form action="main.html">
+        <div class="container">
+            <div class="form">
+                <div class="page">
+                    <div class="page_signup">
+                        <a href="signup.html">Sign up</a>
+                    </div>
+                    <div class="page_login">
+                        <a href="login.html">Log In</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1>Welcome Back!</h1>
+                </div>
+                <div class="edit">
+                    <div class="edit1">
+                        <input type="email" placeholder="Email Address*">
+                    </div>
+                    <div class="edit2">
+                        <input type="password" placeholder="Password*">
+                    </div>
+                </div>
+                <div class="button">
+                    <button>LOG IN</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

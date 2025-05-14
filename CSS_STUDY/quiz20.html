@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        .first{
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        .first_left{
+            width: 50%;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .first_right{
+            width: 50%;
+            border: 2px solid black;
+            background-color: gray;
+        }
+        .second{
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            background-color: purple;
+        }
+        .third{
+            width: 100%;
+            height: 200px;
+            display: flex;
+        }
+        .third_left{
+            width: 40%;
+            height: 100%;
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+        .third_right{
+            width: 60%;
+            height: 100%;
+            display: block;
+        }
+        .third_right_up{
+            width: 100%;
+            height: 50%;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .third_right_down{
+            width: 100%;
+            height: 50%;
+            border: 2px solid black;
+            background-color: lightcoral;
+        }
+        .fourth{
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        .fourth_one{
+            width: 25%;
+            height: 100%;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .fourth_two{
+            width: 25%;
+            height: 100%;
+            border: 2px solid black;
+            background-color: orange;
+        }
+        .fourth_three{
+            width: 25%;
+            height: 100%;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .fourth_four{
+            width: 25%;
+            height: 100%;
+            border: 2px solid black;
+            background-color: green;
+        }
+
+        @media (max-width:700px) {
+            .container{
+                width: 100%; /*화면의 100프로도 가능*/
+            }
+        }
+        @media (max-width: 650px){
+            .container{
+                width: 100%;
+                height: 600px;
+            }
+            .fourth{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .fourth_one, .fourth_two, .fourth_three, .fourth_four{
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        @media (max-width: 500px){
+            .container{
+                width: 100%;
+                height: 700px;
+            }
+            .first{
+                width: 100%;
+                height: 200px;
+                display: block;
+            }
+            .first_left, .first_right{
+                width: 100%;
+                height: 50%;
+            }
+            .third{
+                display: block;
+            }
+            .third_left{
+                width: 100%;
+                height: 50%;
+            }
+            .third_right{
+                width: 100%;
+                height: 50%;
+                display: flex;
+            }
+            .third_right_up, .third_right_down{
+                width: 50%;
+                height: 100%;
+            }
+        }
+        @media (max-width: 350px){
+            .container{
+                width: 100%;
+                height: 1000px;
+            }
+            .third{
+                width: 100%;
+                height: 300px;
+            }
+            .third_left{
+                width: 100%;
+                height: 100px;
+            }
+            .third_right{
+                width: 100%;
+                height: 200px;
+                display: block;
+            }
+            .third_right_up, .third_right_down{
+                width: 100%;
+                height: 100px;
+            }
+            .fourth{
+                width: 100%;
+                height: 400px;
+                display: block;
+            }
+            .fourth_one, .fourth_two, .fourth_three, .fourth_four{
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="first">
+            <div class="first_left"></div>
+            <div class="first_right"></div>
+         </div>
+         <div class="second"></div>
+         <div class="third">
+            <div class="third_left"></div>
+            <div class="third_right">
+                <div class="third_right_up"></div>
+                <div class="third_right_down"></div>
+            </div>
+         </div>
+         <div class="fourth">
+            <div class="fourth_one"></div>
+            <div class="fourth_two"></div>
+            <div class="fourth_three"></div>
+            <div class="fourth_four"></div>
+         </div>
+    </div>
+</body>
+</html>

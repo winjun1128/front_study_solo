@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+
+            animation-name: box_ani;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        .box2:hover{
+            animation-play-state: paused;
+        }
+        .box3:hover{
+            animation-play-state: paused;
+        }
+         .box2{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+
+            animation-name: box_ani2;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+         .box3{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+
+            animation-name: box_ani3;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box_ani{
+            0%{
+                background-color: blue;
+                position: relative;
+            }
+            50%{
+                left: 200px;
+                background-color: orange;
+            }
+            100%{
+                left: 400px;
+                background-color: pink;
+            }
+        }
+        @keyframes box_ani2{
+            0%{
+                background-color: blue;
+                position: relative;
+            }
+            50%{
+                top: 200px;
+                background-color: orange;
+            }
+            100%{
+                top: 400px;
+                background-color: pink;
+            }
+        }
+        @keyframes box_ani3{
+            0%{
+                background-color: blue;
+                position: relative;
+            }
+            50%{
+                left: 200px;
+                top: 200px;
+                background-color: orange;
+            }
+            100%{
+                left: 400px;
+                top: 400px;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

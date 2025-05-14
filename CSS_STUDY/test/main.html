@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main_container{
+            width: 500px;
+            height: 900px;
+            background-color: green;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .message{
+           width: 400px;
+           height: 100px;
+           background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+            animation-name: messageani;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+        .message h1{
+            color: white;
+        }
+
+        @keyframes messageani{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="main.html">
+        <div class="main_container">
+            <div class="message">
+                <h1>Welcome to webpage!</h1>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
